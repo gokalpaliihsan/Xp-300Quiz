@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/yeni"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    android:weightSum="1"
+    tools:context="@drawable/yeni">
+
+    <Button
+        android:id="@+id/basla"
+
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="193dp"
+        android:background="@drawable/buttonblue"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Basla"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/boxshape"
+        android:layout_below="@+id/basla"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/süre"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Toplam soru sayısı 10 adettir.Her soru için 1 dk. süreniz var. Süre bittiğinde otomatik diğer soruya geçer ve bir önceki soruya dönemezsiniz."
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

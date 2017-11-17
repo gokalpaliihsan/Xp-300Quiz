@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aig.xp_300quiz.soru10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yeni"
+        tools:context="com.example.aig.xp_300quiz.soru3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yeni"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:context="com.example.aig.xp_300quiz.Soru2_">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/next"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="500dp"
+                android:background="@drawable/boxshape"
+                android:foregroundGravity="center"
+                android:gravity="center_vertical|center_horizontal|center">
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="160dp"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="17dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonblue"
+                android:onClick="next"
+                android:text="ileri"
+                tools:text="ileri" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="370dp"
+                android:layout_height="400dp"
+                android:layout_above="@+id/next"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/boxshape"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="RBC,PLT,WBC,HGB ve HCT parametrelerini ölçebilmek için kaç farklı dedektör kullanılmaktadır?"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cevaplar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="Soru 10"
+                    android:textColor="@android:color/black" />
+
+                <RadioGroup
+                    android:id="@+id/cevaplar"
+                    android:layout_width="280dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_marginTop="125dp"
+                    android:gravity="start">
+
+                    <RadioButton
+                        android:id="@+id/ans1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        android:textColorLink="@android:color/holo_blue_light"
+                        app:buttonTint="@color/colorAccent" />
+
+                    <RadioButton
+                        android:id="@+id/ans2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        app:buttonTint="@color/colorAccent" />
+
+                    <RadioButton
+                        android:id="@+id/ans3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        app:buttonTint="@color/colorAccent" />
+
+                    <RadioButton
+                        android:id="@+id/ans4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        android:textColorLink="@android:color/holo_blue_light"
+                        app:buttonTint="@color/colorAccent" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
